@@ -10,3 +10,8 @@ Installation
 
 In order to use this examples you must create `config.php` (use `config.php.example` as layout).
 Also you need to run `initial_migration.php`. This script creates table and inserts there test data
+
+Memory management
+-----------------
+
+Please run `memory_management.php` to see the difference between `libmysql` and `mysqlnd`
