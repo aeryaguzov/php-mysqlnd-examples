@@ -17,3 +17,6 @@ Examples
 -----------------
 
 * `memory_management.php`
+
+* `sync_vs_async_time.php`
+
