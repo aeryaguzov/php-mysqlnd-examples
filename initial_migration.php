@@ -16,10 +16,10 @@ $link = new mysqli(
     $cnf['db']['port']
 );
 
-$result = $link->query('DROP TABLE IF EXISTS `async_test`;');
+$result = $link->query('DROP TABLE IF EXISTS `mysqlnd_test`;');
 if ($result) {
     $result = $link->query('
-        CREATE TABLE `async_test` (
+        CREATE TABLE `mysqlnd_test` (
           `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
           `val` varchar(255) DEFAULT NULL,
           PRIMARY KEY (`id`)
@@ -36,7 +36,7 @@ $rows_count = $cnf['initial_migration']['rows_count'];
 
 $count = 0;
 $query = '';
-$insert = 'INSERT INTO `async_test` (`id`, `val`) VALUES ';
+$insert = 'INSERT INTO `mysqlnd_test` (`id`, `val`) VALUES ';
 
 for ($i = 1; $i <= $rows_count; $i++) {
     if ($count == $bulk_count) {
