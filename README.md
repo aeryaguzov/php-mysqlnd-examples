@@ -20,3 +20,5 @@ Examples
 
 * `sync_vs_async_time.php`
 
+* `mersenne_migration.php` - typical migration where data preparation is performed while query is being executed
+
